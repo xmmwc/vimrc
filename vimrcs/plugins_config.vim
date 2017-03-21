@@ -10,6 +10,7 @@
 """"""""""""""""""""""""""""""
 call pathogen#infect('~/.vim_runtime/sources_forked/{}')
 call pathogen#infect('~/.vim_runtime/sources_non_forked/{}')
+call pathogen#infect('~/.vim_runtime/sources_self/{}')
 call pathogen#helptags()
 
 """"""""""""""""""""""""""""""
@@ -147,6 +148,9 @@ let g:syntastic_python_checkers=['pyflakes']
 
 " Javascript
 let g:syntastic_javascript_checkers = ['jshint']
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_ngdoc = 1
+let g:javascript_plugin_flow = 1
 
 " Go
 let g:syntastic_auto_loc_list = 1
